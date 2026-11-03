@@ -10,12 +10,12 @@ Install [MediaMTX](https://github.com/bluenviron/mediamtx) on a machine that can
 
 **Linux/macOS:**
 ```sh
-MTX_PATHS_CAMERA_SOURCE='rtsp://192.168.1.100:8000/camera' ./mediamtx mediamtx.yml
+MTX_PATHS_CAMERA_SOURCE='rtsp://192.168.1.100:8554/camera' ./mediamtx mediamtx.yml
 ```
 
 **PowerShell:**
 ```powershell
-$env:MTX_PATHS_CAMERA_SOURCE = 'rtsp://192.168.1.100:8000/camera'
+$env:MTX_PATHS_CAMERA_SOURCE = 'rtsp://192.168.1.100:8554/camera'
 .\mediamtx.exe mediamtx.yml
 ```
 
