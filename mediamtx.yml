@@ -1,6 +1,10 @@
 # MediaMTX reads an existing RTSP stream and republishes it as HLS/WebRTC.
 # Set the RTSP URL via MTX_PATHS_CAMERA_SOURCE (recommended).
 # Do not commit camera usernames/passwords into this public repository.
+# Keep RTSP on port 8554 without binding the default UDP RTP/RTCP ports 8000/8001.
+rtspTransports: [tcp]
+rtspAddress: :8554
+
 hls: yes
 hlsAddress: :8888
 hlsAllowOrigins: ['*']
