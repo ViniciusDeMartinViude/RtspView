@@ -1,0 +1,12 @@
+# MediaMTX reads an existing RTSP stream and republishes it as HLS/WebRTC.
+# Set the RTSP URL via MTX_PATHS_CAMERA_SOURCE (recommended).
+# Do not commit camera usernames/passwords into this public repository.
+hls: yes
+hlsAddress: :8888
+hlsAllowOrigins: ['*']
+webrtc: yes
+webrtcAddress: :8889
+paths:
+  camera:
+    source: rtsp://127.0.0.1:8554/camera
+    sourceOnDemand: yes
