@@ -8,5 +8,5 @@ webrtc: yes
 webrtcAddress: :8889
 paths:
   camera:
-    source: rtsp://127.0.0.1:8000/camera
+    source: rtsp://127.0.0.1:8554/camera
     sourceOnDemand: yes
